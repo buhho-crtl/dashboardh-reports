@@ -8,6 +8,37 @@ body:
       value: |
         Thanks for taking the time to report a bug! Please fill out the information below as completely as possible.
 
+        > ⚠️ **This report form is only available in English.** Please write your report in English so our team can process it.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app is this about?
+      options:
+        - Ninedas
+        - Dashboard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Which device is failing?
+      description: Model and OS version, e.g. "iPhone 13, iOS 17.4" or "Samsung Galaxy S21, Android 14"
+      placeholder: e.g. iPhone 13, iOS 17.4
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
